@@ -6,7 +6,7 @@ memo_type = gets.chomp.to_s
 
 if memo_type == "1"
  puts "拡張子を除いたファイルを入力してください。"
- file_name = gets.to_s
+ file_name = gets.chomp.to_s
  puts "メモしたい内容を記入してください。"
  puts "完了したらCtrl + D を押します。"
  
@@ -15,9 +15,9 @@ if memo_type == "1"
  test << [input]
  puts "以下の内容をメモに登録しました。「#{input}」"
  end
-else 
+elsif  memo_type == "2"
  puts "編集するファイルを拡張子を除いて入力してください。"
- file_name = gets.to_s
+ file_name = gets.chomp.to_s
  puts "メモしたい内容を記入してください。"
  puts "完了したらCtrl + D を押します。"
  
